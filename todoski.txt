@@ -1,0 +1,51 @@
+TODO
+
+zła godzina przy zapisie koszyka (+1h)
+zla data na liscie przy eksportowaniu do pliku
+
+DONE
+
+Zamienić przetwory na słoiki
+Wielkość liter przy szukajkach??
+Dodawanie przepisów: po kliknięciu istniejącej labelki usunąć pole wyszukiwania
+Dodać nowy klikalny badge w koszyku dla nowych produktów
+Koszyk zapamiętywanie wybranej listy w bazie danych
+Planer zapamiętywać plan w ramach jednej sesji bez dodawania do bazki
+Możliwość dodania rzeczy obiadowych na kolacje itp itd
+dodaj przepis: dodać pobieranie przepisów
+podaj przepis: unselect po dodaniu na daną część dodania
+planner: po edycji update
+koszyk: po wybraniu produktu z listy usunąć wyszukiwanie
+indykator wykonanego zapisu koszyka
+Dodawanie nowego składnika od razu do koszyka jak go się tworzy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+customowa kolejność koszyka wg alejek w sklepie podczas eksportowania listy
+Owoce->
+Warzywa->
+Zioła->
+Pieczywo->
+Słoiki->
+Puszki->
+Przyprawy->
+Sosy->
+Dania Gotowe->
+Nabiał->
+Mrożonki->
+Suche->
+Napoje->
+Słodycze->
+Snaki->
+Chemia

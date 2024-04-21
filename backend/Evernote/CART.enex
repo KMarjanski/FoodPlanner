@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE en-export SYSTEM "http://xml.evernote.com/pub/evernote-export4.dtd">
+<en-export export-date="20240208T170203Z" application="Evernote" version="10.75.1">
+  <note>
+    <title>Lista zakupów</title>
+    <created>20240208T170122Z</created>
+    <updated>20240208T170134Z</updated>
+    <note-attributes>
+    </note-attributes>
+    <content>
+      <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+      <!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+        <en-note>
+          <h3>Warzywa</h3><ul style="--en-todo:true;"><li><div>Cebula</div></li><li style="--en-checked:false;"><div>Czosnek</div></li><li style="--en-checked:false;"><div>Marchew</div></li><li style="--en-checked:false;"><div>Kapusta modra</div></li><li style="--en-checked:false;"><div>Boczniaki</div></li><li style="--en-checked:false;"><div>Pietruszka</div></li><li style="--en-checked:false;"><div>Ziemniak</div></li><li style="--en-checked:false;"><div>Kapusta  </div></li><li style="--en-checked:false;"><div>Pomidor </div></li><li style="--en-checked:false;"><div>Rukola</div></li><li style="--en-checked:false;"><div>Pomidorki</div></li><li style="--en-checked:false;"><div>Sałata lodowa</div></li></ul><h3>Zioła</h3><ul style="--en-todo:true;"><li><div>Bazylia</div></li><li style="--en-checked:false;"><div>Kolendra</div></li></ul><h3>Pieczywo</h3><ul style="--en-todo:true;"><li><div>Pinsa</div></li></ul><h3>Słoiki</h3><ul style="--en-todo:true;"><li><div>Masło orzechowe</div></li><li style="--en-checked:false;"><div>Majonez</div></li><li style="--en-checked:false;"><div>Przecier pomidorowy</div></li><li style="--en-checked:false;"><div>Oliwki</div></li><li style="--en-checked:false;"><div>Pesto</div></li></ul><h3>Przyprawy</h3><ul style="--en-todo:true;"><li><div>Kminek</div></li></ul><h3>Dania gotowe</h3><ul style="--en-todo:true;"><li><div>Pyzy</div></li></ul><h3>Nabiał</h3><ul style="--en-todo:true;"><li><div>Burrata</div></li><li style="--en-checked:false;"><div>Mozzarella</div></li></ul><h3>Mięsko</h3><ul style="--en-todo:true;"><li><div>Wołowina dla psa</div></li></ul><h3>Mrożonki</h3><ul style="--en-todo:true;"><li><div>Frytki</div></li></ul><h3>Suche</h3><ul style="--en-todo:true;"><li><div>Makaron  </div></li><li style="--en-checked:false;"><div>Mleko roślinne</div></li></ul><h3>Chemia</h3><ul style="--en-todo:true;"><li><div>Ręcznik papierowy</div></li><li style="--en-checked:false;"><div>Proszek do prania</div></li><li style="--en-checked:false;"><div>Papier do pieczenia</div></li></ul>
+        </en-note>      
+      ]]>
+    </content>
+  </note>
+</en-export>

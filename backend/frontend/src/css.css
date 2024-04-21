@@ -1,0 +1,11 @@
+html {
+    background-color: rgb(69, 173, 107) !important;
+}
+
+body {
+    background-color: rgb(69, 173, 107) !important;
+}
+
+.my-modal {
+    min-width: 75%;
+} 
