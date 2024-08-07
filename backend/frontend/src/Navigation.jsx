@@ -14,7 +14,7 @@ const Navigation = () => {
           <Navbar.Brand>Jedzonko</Navbar.Brand>
           <Nav className="me-auto" onSelect={(key) => setTab(key)} >
             <Nav.Link disabled eventKey='Calendar'><FontAwesomeIcon icon={faCalendarDays} /></Nav.Link>
-            <Nav.Link eventKey='Planer'>Planer</Nav.Link>
+      <Nav.Link eventKey='Planer'>Planer</Nav.Link>
             <Nav.Link eventKey='Przepisy'>Przepisy</Nav.Link>
             <Nav.Link eventKey='Koszyk'>Koszyk</Nav.Link>
             <Nav.Link disabled eventKey='Lodowka'><FontAwesomeIcon icon={faIgloo} /></Nav.Link>
