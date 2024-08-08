@@ -208,7 +208,7 @@ const DodajPrzepis = () => {
   };
   useEffect(() => {
     if (
-      nameOverlayTarget.current !== document.activeElement ||
+      nameOverlayTarget.current !== document.activeElement &&
       categoriesOverlayTarget.current !== document.activeElement
     ) {
       overlayTarget.current.focus();
