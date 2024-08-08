@@ -39,6 +39,7 @@ const DodajPrzepis = () => {
   const [cSearch, setCSearch] = useState("");
   const [iSearch, setISearch] = useState("");
   const categoriesOverlayTarget = useRef(null);
+  const nameOverlayTarget = useRef(null);
   const [showOverlay, setShowOverlay] = useState(false);
   const overlayTarget = useRef(null);
   const handleOnClickCategory = (x, neew = false) => {
@@ -206,13 +207,13 @@ const DodajPrzepis = () => {
     setTab("Przepisy");
   };
   useEffect(() => {
-    const addedIngredients = ingredients
-      .filter((i) => form.ingredients.some((fi) => fi === i.name))
-      .filter((i) => !i.inRecipes.some((ir) => ir === form.name));
-    if (addedIngredients.length > 0) {
+    if (
+      nameOverlayTarget.current !== document.activeElement ||
+      categoriesOverlayTarget.current !== document.activeElement
+    ) {
       overlayTarget.current.focus();
     }
-  }, [form, ingredients]);
+  }, [form, ingredients, nameOverlayTarget, categoriesOverlayTarget]);
 
   return (
     <Container fluid>
@@ -220,6 +221,8 @@ const DodajPrzepis = () => {
         <Form.Group className="mb-3">
           <Form.Label>Nazwa przepisu</Form.Label>
           <Form.Control
+            id="name"
+            ref={nameOverlayTarget}
             type="text"
             value={form.name}
             onChange={(x) => {
@@ -249,6 +252,7 @@ const DodajPrzepis = () => {
             </Col>
             <Col xs="auto">
               <Form.Control
+                id="category"
                 ref={categoriesOverlayTarget}
                 type="text"
                 placeholder="Szukaj..."
