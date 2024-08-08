@@ -15,15 +15,7 @@ const Lista = () => {
       .then((response) => response.json())
       .then((thisData) => {
         setList((old) => {
-          const thisList = customSortCart(cookRaw(thisData[0].cart)).map(
-            (l) => ({
-              ...l,
-              ingredients: l.ingredients.map((i) => ({
-                name: i,
-                checked: false,
-              })),
-            })
-          );
+          const thisList = customSortCart(cookRaw(thisData[0].cart));
           if (JSON.stringify(old) === JSON.stringify(thisList)) return old;
           else return thisList;
         });
@@ -32,7 +24,15 @@ const Lista = () => {
   }, []);
 
   useEffect(() => {
-    setLista(list);
+    setLista(
+      list.map((l) => ({
+        ...l,
+        ingredients: l.ingredients.map((i) => ({
+          name: i,
+          checked: false,
+        })),
+      }))
+    );
   }, [list]);
 
   return (
