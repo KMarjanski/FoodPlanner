@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Badge } from "react-bootstrap";
 import kategorieProduktow from "./KategorieProduktow";
 import { StoreContext } from "../store/StoreProvider";
@@ -6,6 +6,7 @@ import { StoreContext } from "../store/StoreProvider";
 const Lista = () => {
   const { cookRaw, customSortCart } = kategorieProduktow;
   const { list, setList } = useContext(StoreContext);
+  const [lista, setLista] = useState([]);
   useEffect(() => {
     fetch(`/cart`, {
       method: "GET",
@@ -13,28 +14,36 @@ const Lista = () => {
     })
       .then((response) => response.json())
       .then((thisData) => {
-        setList(
-          customSortCart(cookRaw(thisData[0].cart)).map((l) => ({
-            ...l,
-            ingredients: l.ingredients.map((i) => ({
-              name: i,
-              checked: false,
-            })),
-          }))
-        );
+        setList((old) => {
+          const thisList = customSortCart(cookRaw(thisData[0].cart)).map(
+            (l) => ({
+              ...l,
+              ingredients: l.ingredients.map((i) => ({
+                name: i,
+                checked: false,
+              })),
+            })
+          );
+          if (JSON.stringify(old) === JSON.stringify(thisList)) return old;
+          else return thisList;
+        });
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    setLista(list);
+  }, [list]);
+
   return (
     <center>
-      {list.map((l) => (
+      {lista.map((l) => (
         <>
           <h2 key={l.category}>{l.category}</h2>
           {l.ingredients.map((i) => (
             <Badge
               onClick={() =>
-                setList((old) =>
+                setLista((old) =>
                   old.map((o) => {
                     if (o.category === l.category) {
                       return {
